@@ -4,7 +4,7 @@
 
 	require_once(__DIR__.'/getdb.php');
 
-	function doQuery($query)
+	function doQuery($query, $params)
 	{
 		$db = getDB();
 		
@@ -15,14 +15,11 @@
 		}
 
 		//Prepare the statement
-		$stmt = $db->prepare("SELECT id, first_name, last_name FROM Users");
+		$stmt = $db->prepare($query);
 
-		/*
-		$params = array(":email" => $email);
 		$r = $stmt->execute($params);
-		*/
 
-		$r = $stmt->execute(null);
+		// $r = $stmt->execute(null);
 
 		printf("db returned: " . var_export($r, true));
 
@@ -34,7 +31,7 @@
 
 		$result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-		printf("\n%s %s\n", $result["first_name"], $result["last_name"]);
+		return $result;
 	}
 
 ?>

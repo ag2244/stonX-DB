@@ -7,13 +7,7 @@ require_once('rabbitMQLib.inc');
 require_once('db/getdb.php');
 require_once('db/queryProcessor.php');
 
-function doLogin($username,$password)
-{
-    // lookup username in databas
-    // check password
-    return true;
-    //return false if not valid
-}
+require_once('user/validation.php');
 
 function requestProcessor($request)
 {
@@ -32,7 +26,7 @@ function requestProcessor($request)
         case "validate_session":
             return doValidate($request['sessionId']);
         case "query":
-            return doQuery($request['rabbitQuery']);
+            return doQuery($request['rabbitQuery'], $request['params']);
     }
     
     return array("returnCode" => '0', 'message'=>"Server received request and processed");

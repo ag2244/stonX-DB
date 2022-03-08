@@ -7,17 +7,17 @@ require_once('rabbitMQLib.inc');
 $client = new rabbitMQClient("testRabbitMQ.ini","testServer");
 if (isset($argv[1]))
 {
-  $msg = $argv[1];
+  $query = $argv[1];
 }
 else
 {
-  $msg = "test message";
+  $query = "SELECT id, first_name, last_name FROM Users";
 }
 
 $request = array();
 $request['type'] = "query";
-$request['rabbitQuery'] = "steve";
-$request['message'] = $msg;
+$request['rabbitQuery'] = $query;
+$request['params'] = array();
 
 $response = $client->send_request($request);
 //$response = $client->publish($request);
