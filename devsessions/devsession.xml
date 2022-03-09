@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Notepadqq>
+    <View>
+        <Tab filePath="/home/anuraag/stonxdb/queryClient.php" cacheFilePath="" cursorX="31" cursorY="0" scrollX="0" scrollY="0" language="php" customIndent="1" useTabs="0" tabSize="2"/>
+        <Tab filePath="/home/anuraag/stonxdb/queryServer.php" cacheFilePath="" cursorX="0" cursorY="0" scrollX="0" scrollY="0" language="php" customIndent="1" useTabs="0" tabSize="4"/>
+        <Tab filePath="/home/anuraag/stonxdb/db/dbconfig.php" cacheFilePath="" cursorX="0" cursorY="0" scrollX="0" scrollY="0" language="php"/>
+        <Tab filePath="/home/anuraag/stonxdb/testRabbitMQ.ini" cacheFilePath="" cursorX="3" cursorY="11" scrollX="0" scrollY="0" language="properties"/>
+        <Tab filePath="/home/anuraag/stonxdb/user/validation.php" cacheFilePath="" cursorX="29" cursorY="16" scrollX="0" scrollY="0" language="php" active="1"/>
+    </View>
+    <View>
+        <Tab filePath="/home/anuraag/stonxdb/db/getdb.php" cacheFilePath="" cursorX="0" cursorY="0" scrollX="0" scrollY="0" language="php" customIndent="1" useTabs="0" tabSize="4"/>
+        <Tab filePath="/home/anuraag/stonxdb/db/queryProcessor.php" cacheFilePath="" cursorX="6" cursorY="1" scrollX="0" scrollY="0" language="php" active="1"/>
+    </View>
+</Notepadqq>

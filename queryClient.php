@@ -15,8 +15,9 @@ else
 }
 
 $request = array();
-$request['type'] = "query";
-$request['rabbitQuery'] = $query;
+$request['type'] = "login";
+$request['username'] = "test@test.com";
+$request['password'] = "test_passwd";
 $request['params'] = array();
 
 $response = $client->send_request($request);

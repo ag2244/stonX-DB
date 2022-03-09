@@ -21,8 +21,6 @@
 
 		// $r = $stmt->execute(null);
 
-		printf("db returned: " . var_export($r, true));
-
 		$e = $stmt->errorInfo();
 		if ($e[0] != "00000"){
 			printf("Something went wrong: " . var_export($e, true));
